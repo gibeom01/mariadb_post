@@ -9,7 +9,7 @@
 	<%@ include file="post_dbconn.jsp" %>
 	<%
 	// JDBC 드라이버 연결
-	Class.forName("com.mysql.jdbc.Driver");
+	Class.forName("org.mariadb.jdbc.Driver");
 	
     Connection connection = DriverManager.getConnection(db_address, db_username, db_pwd);
 
