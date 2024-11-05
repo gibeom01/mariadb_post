@@ -16,7 +16,7 @@
 
         try
             {
-                Class.forName("com.mysql.jdbc.Driver");
+                Class.forName("org.mariadb.jdbc.Driver");
                 Connection connection = DriverManager.getConnection(jdbcUrl, dbId, dbPwd);
                 out.println("MySQL 연결 성공");
             }
